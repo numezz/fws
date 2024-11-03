@@ -1,0 +1,28 @@
+.skin{
+    width: 100vw;
+    height: 100vh;
+}
+
+.text{
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    display: flex;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+    color: #cccccc;
+    font-size: min(4vw,8vh);
+    border-radius: 0.2vw;
+    user-select: none;
+    font-family: f2;
+    text-align: center;
+    overflow: visible;
+}
+
+.blocks{
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

@@ -1,0 +1,6 @@
+.skin{
+    width: 50vw;
+    height: 50vh;
+    border: 1px red solid;
+    position: absolute;
+}

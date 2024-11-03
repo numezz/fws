@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+form {
+  all: unset;
+  display: revert;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+@font-face {
+  font-family: f1;
+  src: url('./fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: f2;
+  src: url('./fonts/Moderustic-Regular.ttf');
+}
+
+/* Стили для скроллбара в WebKit-браузерах (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0.8vh;
+  /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  /* Цвет фона трека скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  /* Цвет ползунка скроллбара */
+  border-radius: 0.4vh;
+  /* Скругление углов ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+  /* Цвет ползунка при наведении */
+}
