@@ -1,0 +1,11 @@
+.errorstatus{
+    background-color: rgba(255, 0, 0, 0.7);
+    position: absolute;
+    width: 18vw;
+    height: 2.5vh;
+    bottom: -5vh;
+    right: 2vw;
+    border-radius: 20vw;
+    color: white;
+    text-align: center;
+}

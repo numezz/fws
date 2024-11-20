@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import styles from './Form.module.css'
 import UserService from '../../../../services/UserService'
 
-const Form = () => {
+const Form = ({ functionForChangeErrorStatus }) => {
 
     const [cbppa, setCbppa] = useState(0);
     const linkToInputEmail = useRef(null)
@@ -41,7 +41,7 @@ const Form = () => {
                         const password = linkToInputPassword.current.value
                         const data = [login, email, password]
                         UserService.createUser(data).then((result) => { console.log(result) }).catch((error) => {
-                            console.log(error);
+                            functionForChangeErrorStatus(error.response.data.message);
                         })
                     }
 
